@@ -35,8 +35,9 @@ public class FavoritoAdaptador extends RecyclerView.Adapter<FavoritoAdaptador.Fa
     public void onBindViewHolder(FavoritoViewHolder holder, int i) {
         Mascota mascota = mascotas.get(i);
 
+        holder.foto.setImageResource(mascota.getFoto());
         holder.nombre.setText(mascota.getNombre());
-        holder.likes.setText(mascota.getLikes());
+        holder.likes.setText("" + mascota.getLikes());
     }
 
     @Override
