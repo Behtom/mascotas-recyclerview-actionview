@@ -44,22 +44,16 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Favo
         holder.likes.setText("" + mascota.getLikes());
         holder.nombre.setText(mascota.getNombre());
 
-        holder.like.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mascota.setLikes();
-                holder.likes.setText("" + mascota.getLikes());
-            }
-        });
-
         holder.favorito.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mascota.setFavorito();
+                mascota.setLikes();
+                holder.likes.setText("" + mascota.getLikes());
                 if(mascota.isFavorito())
                     Toast.makeText(activity, "Favorito", Toast.LENGTH_SHORT).show();
                 else
-                    Toast.makeText(activity, "Ya no es avorito", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(activity, "Ya no es favorito", Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -73,7 +67,6 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Favo
 
         private ImageView favorito;
         private ImageView foto;
-        private ImageView like;
         private TextView likes;
         private TextView nombre;
 
@@ -82,7 +75,6 @@ public class MascotaAdaptador extends RecyclerView.Adapter<MascotaAdaptador.Favo
 
             favorito = (ImageView)itemView.findViewById(R.id.activity_main_favorito);
             foto = (ImageView)itemView.findViewById(R.id.activity_main_foto);
-            like = (ImageView)itemView.findViewById(R.id.activity_main_like);
             likes = (TextView)itemView.findViewById(R.id.activity_main_likes);
             nombre = (TextView)itemView.findViewById(R.id.activity_main_nombre);
         }

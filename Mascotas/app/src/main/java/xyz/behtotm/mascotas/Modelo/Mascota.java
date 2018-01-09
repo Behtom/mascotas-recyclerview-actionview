@@ -33,7 +33,10 @@ public class Mascota {
      }
 
      public void setLikes() {
-          this.likes += 1;
+          if(isFavorito())
+               this.likes += 1;
+          else
+               this.likes -= 1;
      }
 
      public String getNombre() {
@@ -55,3 +58,5 @@ public class Mascota {
                this.favorito = true;
      }
 }
+
+

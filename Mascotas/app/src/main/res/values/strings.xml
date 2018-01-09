@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">Petagram</string>
-    <string name="main_menu">Favoritos</string>
+    <string name="main_menu_acerca">Acerca de</string>
+    <string name="main_menu_contacto">Contacto</string>
+    <string name="main_menu_favoritos">Favoritos</string>
+    <string name="formulario_enviar">Enviar comentario</string>
+    <string name="formulario_nombre">Nombre</string>
+    <string name="formulario_correo">Correo electrónico</string>
+    <string name="formulario_correo_vacío">Introduce una dirección de correo.</string>
+    <string name="formulario_mensaje">Mensaje</string>
+    <string name="formulario_mensaje_vacio">Introduce un mensaje.</string>
+    <string name="formulario_nombre_vacio">Introduce tu nombre.</string>
+    <string name="form_title">Formulario</string>
+    <string name="acerca_title">Acerca de</string>
+    <string name="acerca_de">Mi nombre es Alberto Torres.\n\n Soy de la ciudad de Toluca, tengo 25 años; tengo algunos conocimientos y experiencia en el desarrollo de aplicaciones.\n\n Actualmente trabajo como desarrollador Android; tomé este curso para aprender nuevas técnicas de desarrollo de aplicaciones Android y espero especializarme en el área.   Saludos y ¡mucho éxito en su aprendizaje!.</string>
 </resources>

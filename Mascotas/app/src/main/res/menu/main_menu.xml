@@ -3,8 +3,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
+        android:id="@+id/action_contacto"
+        android:title="@string/main_menu_contacto"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_acerca"
+        android:title="@string/main_menu_acerca"
+        android:orderInCategory="101"
+        app:showAsAction="never"/>
+    <item
         android:id="@+id/action_favorito"
-        android:title="@string/main_menu"
+        android:title="@string/main_menu_favoritos"
         android:icon="@drawable/estrella_favoritos"
+        android:orderInCategory="103"
         app:showAsAction="ifRoom|collapseActionView"/>
 </menu>
